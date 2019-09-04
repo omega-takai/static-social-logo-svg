@@ -11,9 +11,23 @@ div.container
         .container
           ul
             li
-              a(href="https://ja.nuxtjs.org/" target="_blank" v-text="'Nuxt.js'")
+              a(
+                href="https://ja.nuxtjs.org/"
+                target="_blank"
+                v-text="'Nuxt.js'"
+              )
             li
-              a(href="https://github.com/t--takai/static-social-logo-svg" target="_blank" v-text="'GitHub'")
+              a(
+                href="https://github.com/t--takai/static-social-logo-svg"
+                target="_blank"
+                v-text="'GitHub'"
+              )
+            li
+              a(
+                href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
+                target="_blank"
+                v-text="'Assets'"
+              )
 
   nuxt
 
@@ -21,7 +35,21 @@ div.container
     .container
       ul
         li
-          a(href="https://ja.nuxtjs.org/" target="_blank" v-text="'Nuxt.js'")
+          a(
+            href="https://ja.nuxtjs.org/"
+            target="_blank"
+            v-text="'Nuxt.js'"
+          )
         li
-          a(href="https://github.com/t--takai/static-social-logo-svg" target="_blank" v-text="'GitHub'")
+          a(
+            href="https://github.com/t--takai/static-social-logo-svg"
+            target="_blank"
+            v-text="'GitHub'"
+          )
+        li
+          a(
+            href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
+            target="_blank"
+            v-text="'Assets'"
+          )
 </template>
