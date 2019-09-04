@@ -1,36 +1,55 @@
 <template lang="pug">
-div.wrapper
-  header.header
-    .links
-      p Nuxt.js Links
-      a.button--green(href="https://ja.nuxtjs.org/" target="_blank")
-        | Documentation
-      a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank")
-        | GitHub
+div.container
+  header.hero.is-large.is-primary.is-bold
+    .hero-body
+      .container.has-text-centered
+        h1.title LOGOMARKS
+        h2.subtitle Collect SNS Logo SVG
 
-  nuxt.main
+    .hero-foot
+      nav.tabs
+        .container
+          ul
+            li
+              a(
+                href="https://ja.nuxtjs.org/"
+                target="_blank"
+                v-text="'Nuxt.js'"
+              )
+            li
+              a(
+                href="https://github.com/t--takai/static-social-logo-svg"
+                target="_blank"
+                v-text="'GitHub'"
+              )
+            li
+              a(
+                href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
+                target="_blank"
+                v-text="'Assets'"
+              )
+
+  nuxt
 
   footer.footer
-    .links
-      p This Project Links
-      a.button--grey(href="https://github.com/t--takai/nuxt.js-pug-sass" target="_blank")
-        | GitHub
+    .container
+      ul
+        li
+          a(
+            href="https://ja.nuxtjs.org/"
+            target="_blank"
+            v-text="'Nuxt.js'"
+          )
+        li
+          a(
+            href="https://github.com/t--takai/static-social-logo-svg"
+            target="_blank"
+            v-text="'GitHub'"
+          )
+        li
+          a(
+            href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
+            target="_blank"
+            v-text="'Assets'"
+          )
 </template>
-
-<style lang="sass" scoped>
-.wrapper
-  display: grid
-  grid-template: 'header' 'main' 'footer' / 1fr
-  width: 100vw
-  min-height: 100vh
-  overflow: hidden
-
-.header
-  grid-area: header
-
-.main
-  grid-area: main
-
-.footer
-  grid-area: footer
-</style>
