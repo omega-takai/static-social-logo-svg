@@ -20,7 +20,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://ja.
 
 ## Config of create nuxt-app
 
-```
+``` bash
 ? Project name nuxt.js-v2.8-pug-sass
 ? Project description Collect SNS Logo SVG
 ? Author name Tomonari Takai
