@@ -1,6 +1,6 @@
-# nuxt.js-pug-sass
+# static-social-logo-svg
 
-> my play ground
+> Collect SNS Logo SVG
 
 ## Build Setup
 
@@ -22,7 +22,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://ja.
 
 ```
 ? Project name nuxt.js-v2.8-pug-sass
-? Project description my play ground
+? Project description Collect SNS Logo SVG
 ? Author name Tomonari Takai
 ? Choose the package manager Yarn
 ? Choose UI framework None

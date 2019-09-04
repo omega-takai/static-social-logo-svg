@@ -24,7 +24,13 @@ $colors: (
 
 // fonts - - - - - - - - - - - - - - - - - - -
 $fonts: (
-  "family": #{'Noto Sans JP', sans-serif},
+  "family": #{
+    BlinkMacSystemFont,
+    -apple-system,
+    "Segoe UI",
+    'Noto Sans JP',
+    sans-serif
+  },
   "color": colors(font),
 );
 @function fonts($key) {

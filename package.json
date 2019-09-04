@@ -1,7 +1,7 @@
 {
-  "name": "nuxt.js-pug-sass",
+  "name": "static-social-logo-svg",
   "version": "1.0.0",
-  "description": "my play ground",
+  "description": "Collect SNS Logo SVG",
   "author": "Tomonari Takai",
   "private": true,
   "scripts": {

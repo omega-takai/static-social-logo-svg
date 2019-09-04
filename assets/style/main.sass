@@ -1,39 +1,14 @@
 // scope    = global
 // fileName = main.sass
 
-// Library - - - - - - - - - - - - - - - - - -
+// Library _._._._._._._._._._._._._._._._._._._._._._._.
 
-// Original Utils - - - - - - - - - - - - - - -
+// Original Utils _._._._._._._._._._._._._._._._._._._._
 @import _chunk
 
-// Style - - - - - - - - - - - - - - - - - - -
+// Style _._._._._._._._._._._._._._._._._._._._._._._._.
 html
-  font-family: fonts('family')
-  font-size: 10px
-  @include gmq-responsive(sp)
-    background-color: colors('font')
+  // font-size: 10px
 
-.links
-  padding-top: 15px
-  p
-    width: 100%
-    font-size: 1.6rem
-
-@mixin button($color: #3b8070)
-  display: inline-block
-  margin: .5rem 1rem
-  border-radius: .4rem
-  border: 1px solid $color
-  color: $color
-  text-decoration: none
-  padding: 1rem 3rem
-  font-size: 1.6rem
-  &:hover
-    color: #fff
-    background-color: $color
-
-.button--green
-  @include button
-
-.button--grey
-  @include button(#35495e)
+  body
+    font-family: fonts('family')

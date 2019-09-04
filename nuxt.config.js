@@ -20,7 +20,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/destyle.css@1.0.10/destyle.min.css'
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css'
       },
       {
         rel: 'stylesheet',
