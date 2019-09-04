@@ -60,7 +60,7 @@ export default {
   },
   // buildDir: 'nuxt-dist',
   router: {
-    base: '/nuxt.js-pug-sass/'
+    base: '/static-social-logo-svg/'
   },
   generate: {
     dir: 'docs'
