@@ -4,5 +4,14 @@
   ],
   "assignees": [
     "t--takai"
-  ]
+  ],
+  "packageRules": [
+    {
+      "packagePatterns": ["sass"],
+      "groupName": "sass",
+      "enabled": false
+    }
+  ],
+  "schedule": ["before 8am on Monday"],
+  "timezone": "Asia/Tokyo"
 }
