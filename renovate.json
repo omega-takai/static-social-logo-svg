@@ -1,17 +1,28 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":label(renovate)",
+    "schedule:weekly",
+    ":automergePatch",
+    ":assignee(t--takai)",
+    ":timezone(Asia/Tokyo)"
   ],
-  "assignees": [
-    "t--takai"
-  ],
+  "lockFileMaintenance": {
+    "automerge": true,
+    "enabled": true
+  },
   "packageRules": [
     {
-      "packagePatterns": ["sass"],
-      "groupName": "sass",
+      "groupName": "node-sass",
+      "packagePatterns": [
+        "^node-sass$"
+      ],
       "enabled": false
     }
   ],
-  "schedule": ["before 8am on Monday"],
-  "timezone": "Asia/Tokyo"
+  "automerge": true,
+  "automergeType": "branch",
+  "major": {
+    "automerge": false
+  }
 }
