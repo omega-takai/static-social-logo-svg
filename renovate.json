@@ -1,28 +1,3 @@
 {
-  "extends": [
-    "config:base",
-    ":label(renovate)",
-    ":automergePatch",
-    ":assignee(t--takai)",
-    ":timezone(Asia/Tokyo)"
-  ],
-  "lockFileMaintenance": {
-    "automerge": true,
-    "enabled": true
-  },
-  "packageRules": [
-    {
-      "groupName": "node-sass",
-      "packagePatterns": [
-        "^node-sass$"
-      ],
-      "enabled": false
-    }
-  ],
-  "schedule": "before 9am on the first day of the month",
-  "automerge": true,
-  "automergeType": "branch",
-  "major": {
-    "automerge": false
-  }
+  "extends": ["@t--takai"]
 }
