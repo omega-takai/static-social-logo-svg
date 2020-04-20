@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf .nuxt dist docs public",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "yarn lint --fix",
+    "lint:fix": "yarn lint --fix",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

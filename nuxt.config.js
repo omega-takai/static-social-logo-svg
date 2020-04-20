@@ -1,10 +1,18 @@
-// import { browserslist } from './package.json'
+// SEE: https://ja.nuxtjs.org/faq/github-pages/
+const routerBase = process.env.BASE_DIR
+  ? {
+      router: {
+        base: process.env.BASE_DIR
+      },
+      generate: {
+        fallback: true, // '404.html' を使用したい場合
+        dir: 'public'
+      }
+    }
+  : {}
 
 export default {
-  mode: 'spa',
-  /*
-   ** Headers of the page
-   */
+  mode: 'universal',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -17,7 +25,11 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: `${process.env.BASE_DIR || '/'}favicon.ico`
+      },
       {
         rel: 'stylesheet',
         href:
@@ -30,58 +42,20 @@ export default {
       }
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-  /*
-   ** Global CSS
-   */
   css: ['@/assets/style/main.sass'],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
-  /*
-   ** Nuxt.js modules
-   */
   modules: ['@nuxtjs/style-resources', '@nuxtjs/eslint-module'],
   styleResources: {
-    // Important notice:
-    // Do not import actual styles.
-    // Use this module only to import variables, mixins,
-    // functions (et cetera) as they won't exist in the actual build.
-    // Can't cross import
-    // Fail:    SCSS ==import==> Sass
-    // Success: Sass ==import==> Sass
     sass: ['./assets/style/_chunk.sass']
   },
-  server: {
-    port: 8000 // デフォルト: 3000
-  },
-  // buildDir: 'nuxt-dist',
-  router: {
-    base: '/static-social-logo-svg/'
-  },
-  generate: {
-    dir: 'docs'
-  },
-  /*
-   ** Build configuration
-   */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
-    // extend(config, ctx) {},
     postcss: {
       plugins: {},
       preset: {
         autoprefixer: {
-          // browsers: browserslist,
-          grid: true
+          grid: 'autoplace'
         }
       }
     }
-  }
+  },
+  ...routerBase
 }
