@@ -16,19 +16,8 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://ja.nuxtjs.org/).
+## Reference
 
-## Config of create nuxt-app
-
-``` bash
-? Project name nuxt.js-v2.8-pug-sass
-? Project description Collect SNS Logo SVG
-? Author name Tomonari Takai
-? Choose the package manager Yarn
-? Choose UI framework None
-? Choose custom server framework None (Recommended)
-? Choose Nuxt.js modules (Press <space> to select, <a> to toggle all, <i> to invert selection)
-? Choose linting tools ESLint, Prettier
-? Choose test framework None
-? Choose rendering mode Single Page App
-```
+- [Nuxt.js docs](https://ja.nuxtjs.org/)
+- [BULMA](https://bulma.io/documentation/)
+- [Lang Pug](https://pugjs.org/language/mixins.html)
