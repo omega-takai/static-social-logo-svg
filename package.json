@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "@nuxtjs/style-resources": "1.0.0",
-    "nuxt": "2.10.2"
+    "nuxt": "2.12.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "2.0.2",
