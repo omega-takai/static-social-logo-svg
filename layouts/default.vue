@@ -1,5 +1,32 @@
 <template lang="pug">
-div.container
+-
+  var links = [
+    {
+      url: 'https://ja.nuxtjs.org/',
+      title: 'Nuxt.js',
+    },
+    {
+      url: 'https://github.com/t--takai/static-social-logo-svg',
+      title: 'GitHub',
+    },
+    {
+      url: 'https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo',
+      title: 'Assets',
+    },
+  ]
+
+mixin pugmixin-links
+  .container
+    ul
+      each val in links
+        li
+          a(
+            target="_blank"
+            href=val.url
+            v-text=`"${val.title}"`
+          )
+
+div
   header.hero.is-large.is-primary.is-bold
     .hero-body
       .container.has-text-centered
@@ -8,48 +35,10 @@ div.container
 
     .hero-foot
       nav.tabs
-        .container
-          ul
-            li
-              a(
-                href="https://ja.nuxtjs.org/"
-                target="_blank"
-                v-text="'Nuxt.js'"
-              )
-            li
-              a(
-                href="https://github.com/t--takai/static-social-logo-svg"
-                target="_blank"
-                v-text="'GitHub'"
-              )
-            li
-              a(
-                href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
-                target="_blank"
-                v-text="'Assets'"
-              )
+        +pugmixin-links
 
   nuxt
 
   footer.footer
-    .container
-      ul
-        li
-          a(
-            href="https://ja.nuxtjs.org/"
-            target="_blank"
-            v-text="'Nuxt.js'"
-          )
-        li
-          a(
-            href="https://github.com/t--takai/static-social-logo-svg"
-            target="_blank"
-            v-text="'GitHub'"
-          )
-        li
-          a(
-            href="https://github.com/t--takai/static-social-logo-svg/tree/master/assets/image/logo"
-            target="_blank"
-            v-text="'Assets'"
-          )
+    +pugmixin-links
 </template>
