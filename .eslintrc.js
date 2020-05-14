@@ -2,21 +2,19 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   extends: [
-    "eslint:recommended",
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended"
+    'eslint:recommended',
+    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
   ],
-  plugins: [
-    'vue'
-  ],
+  plugins: ['vue'],
   // add your custom rules here
   rules: {
-    "no-console": "off"
-  }
+    'no-console': 'off',
+  },
 }
