@@ -46,6 +46,6 @@
     "pug": "3.0.0",
     "pug-plain-loader": "1.0.0",
     "rimraf": "3.0.2",
-    "sass-loader": "10.0.2"
+    "sass-loader": "10.0.3"
   }
 }
