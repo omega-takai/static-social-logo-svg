@@ -20,7 +20,7 @@
     "IE 11"
   ],
   "dependencies": {
-    "@nuxtjs/style-resources": "1.2.0",
+    "@nuxtjs/style-resources": "1.2.1",
     "nuxt": "2.15.7"
   },
   "devDependencies": {
